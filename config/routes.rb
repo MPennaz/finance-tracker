@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   
   root 'welcome#index'
   
+  get 'my_portfolio', to: "users#my_portfolio"
+  
   get 'home', to: 'welcome#home'
   
   get 'about', to: 'welcome#about'
