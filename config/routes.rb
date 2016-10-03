@@ -6,9 +6,11 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
   
-  root 'welcome#index'
+  root 'users#my_portfolio'
   
-  get 'my_portfolio', to: "users#my_portfolio"
+  get 'my_portfolio', to: 'users#my_portfolio'
+  
+  get 'search_stocks', to: 'stocks#search'
   
   get 'home', to: 'welcome#home'
   
